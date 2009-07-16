@@ -1,0 +1,2055 @@
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (483.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (27.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCompanies (20090716133136)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCompanies (20090716133136)
+  [4;36;1mSQL (44.6ms)[0m   [0;1mCREATE TABLE `companies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090716133136')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `companies`[0m
+  [4;36;1mSQL (15.3ms)[0m   [0;1mdescribe `companies`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `companies`[0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCompany Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `companies`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.3ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Goyette Inc', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Beahan, Bednar and Beahan', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Hackett-Deckow', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Jast-Funk', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Erdman-Reichel', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Howe-Jacobson', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Hammes, Eichmann and Pollich', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (36.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Tillman-Bashirian', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Gislason, Beier and Koepp', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Strosin Inc', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Gerlach, Reichert and Brakus', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('West Group', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Heathcote Group', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('O\'Keefe, Wilkinson and Robel', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Effertz Inc', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Feil, Walsh and Adams', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Bartoletti LLC', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Lesch and Sons', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Bednar and Sons', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Romaguera-Zboncak', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Kovacek, Douglas and Yundt', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Renner, Ruecker and Jakubowski', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Hermiston Inc', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Rolfson, Zieme and Bosco', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Rau, Gutmann and Hartmann', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Medhurst Inc', '2009-07-16 13:39:40', '2009-07-16 13:39:40')[0m
+  [4;36;1mSQL (5.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Effertz Inc', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Roberts Group', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Littel and Sons', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Dickinson Group', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Williamson-Jast', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Sanford-Denesik', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('McDermott, Jakubowski and Wiegand', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Lindgren, Hane and Schaden', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Gerlach and Sons', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Waelchi LLC', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Towne LLC', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Mante, Ryan and McGlynn', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Purdy Group', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Gottlieb, Kuphal and Lockman', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Bogan, Monahan and Dietrich', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Kilback-Yundt', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Batz, Kutch and Vandervort', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Lowe-Cummerata', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('White-Sanford', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.2ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Hansen Group', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.1ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Rippin LLC', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Moore Inc', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCompany Create (0.2ms)[0m   [0;1mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Hills-Beatty', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCompany Create (0.1ms)[0m   [0mINSERT INTO `companies` (`name`, `updated_at`, `created_at`) VALUES('Feest, Stiedemann and Ryan', '2009-07-16 13:39:41', '2009-07-16 13:39:41')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mCOMMIT[0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:25) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:25) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:25) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:25) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:56:02) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:56:02) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:56:02) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 10:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:01:38) [GET]
+
+ActionController::RoutingError (No route matches "/rubyamf/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#utilities to png (for 127.0.0.1 at 2009-07-16 11:02:46) [GET]
+  Parameters: {"id"=>"logo"}
+Completed in 2ms (DB: 0) | 200 [http://localhost/rubyamf/utilities/logo.png]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:04:26) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf/gateway]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:04:59) [GET]
+Sending data 
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf/gateway]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:19) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:23) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:23) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:23) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:23) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:52) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:52) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:05:52) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:06:16) [GET]
+Completed in 2ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:06:21) [GET]
+Completed in 2ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:06:27) [GET]
+Completed in 2ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:06:28) [GET]
+Completed in 2ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:53) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:53) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:53) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:06:53) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:07:55) [GET]
+Completed in 3ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:08:01) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf/gateway]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:04) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/swfobject.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-16 11:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/history/history.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:13:58 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:14:07) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf/gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:22:42) [GET]
+Rendering app/public/rubyamf/index.html
+Completed in 3ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:22:53) [GET]
+Rendering app/public/rubyamf/index.html
+Completed in 5ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:23:21) [GET]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:23:43) [GET]
+Completed in 3ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:23:50) [GET]
+Completed in 3ms (DB: 0) | 200 [http://localhost/rubyamf/browser]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:24:58) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:25:01 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:25:20) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:25:22 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:25:47) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf/gateway]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:26:11) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:26:45) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:26:47 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (21.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:31:47) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 12ms (View: 10, DB: 22) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:31:50 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:32:04) [GET]
+Sending data 
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:32:10) [GET]
+Sending data 
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:32:21) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:32:23 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:35:34) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:35:37 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:36:13) [GET]
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Jul 16 11:36:16 -0300 2009
+  Status: 500 Internal Server Error
+  private method `split' called for #<Mime::Type:0x10c7870>
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb:206:in `method_missing'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:51:in `media_type'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:117:in `parseable_data?'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/request.rb:138:in `POST'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:428:in `request_parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/request.rb:381:in `parameters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1279:in `assign_shortcuts'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:91:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/alexandrebini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:37:53) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:37:55) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:37:55) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 11:37:55) [POST]
+Completed in 0ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:38:41) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:38:43) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:38:43) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 11:38:43) [POST]
+Completed in 1ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:39:28) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:39:31) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:39:31) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 11:39:31) [POST]
+Completed in 1ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:40:25) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:40:27) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:40:27) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 11:40:27) [POST]
+Completed in 16ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 22ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:40:43) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:40:43) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CompaniesController#find_all (for 127.0.0.1 at 2009-07-16 11:40:43) [POST]
+  [4;36;1mCompany Load (42.0ms)[0m   [0;1mSELECT * FROM `companies` [0m
+Completed in 53ms (DB: 42) |  [http://localhost/rubyamf_gateway]
+  [4;35;1mCompany Columns (15.5ms)[0m   [0mSHOW FIELDS FROM `companies`[0m
+Sending data 
+Completed in 94ms (View: 0, DB: 16) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-07-16 11:43:55) [GET]
+
+
+ActionController::RoutingError (No route matches "/amfphp/browser" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 11:44:00) [GET]
+  [4;36;1mSQL (17.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 18) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:44:02) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:44:03) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 11:44:03) [POST]
+Completed in 20ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 29ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:44:08) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 11:44:08) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CompaniesController#find_all (for 127.0.0.1 at 2009-07-16 11:44:08) [POST]
+  [4;36;1mCompany Load (47.9ms)[0m   [0;1mSELECT * FROM `companies` [0m
+Completed in 58ms (DB: 48) |  [http://localhost/rubyamf_gateway]
+  [4;35;1mCompany Columns (50.3ms)[0m   [0mSHOW FIELDS FROM `companies`[0m
+Sending data 
+Completed in 141ms (View: 0, DB: 50) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing ActionController::Base#browser (for 127.0.0.1 at 2009-07-16 11:49:58) [GET]
+
+
+SyntaxError (/Users/alexandrebini/rubyAMFBrowser/app/controllers/rubyamf_controller.rb:101: syntax error, unexpected $end, expecting kEND):
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:382:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:382:in `load_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:381:in `load_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:256:in `require_or_load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:427:in `load_missing_constant'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:77:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:89:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:352:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:351:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:351:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:388:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (29.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:07:17) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:07:20) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:07:20) [POST]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:07:20) [POST]
+Completed in 1ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:08:03) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:08:05) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:08:06) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:08:06) [POST]
+Completed in 1ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:08:49) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 9ms (View: 7, DB: 16) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:08:51) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:08:51) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:08:51) [POST]
+Completed in 1ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:09:33) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:09:35) [POST]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:09:35) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:09:35) [POST]
+Completed in 2ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:10:44) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:10:46) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:10:46) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:10:46) [POST]
+Completed in 9ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:11:31) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:11:33) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:11:33) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:11:33) [POST]
+Sending data 
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:12:00) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:03) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:03) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:12:03) [POST]
+Sending data 
+Completed in 28ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:12:11) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:13) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:13) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:12:13) [POST]
+Completed in 10ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 17ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:12:38) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:40) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:12:40) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:12:40) [POST]
+Sending data 
+Completed in 17ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:13:40) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:13:42) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:13:42) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:13:42) [POST]
+Completed in 10ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 17ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:14:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:15:01) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:15:01) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:15:01) [POST]
+Sending data 
+Completed in 29ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:16:03) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:16:05) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:16:05) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:16:05) [POST]
+Completed in 9ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 19ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:18:20) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:18:22) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:18:22) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:18:22) [POST]
+Sending data 
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:18:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:18:54) [POST]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:18:54) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:18:54) [POST]
+Completed in 15ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 21ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#browser (for 127.0.0.1 at 2009-07-16 12:19:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering /Users/alexandrebini/rubyAMFBrowser/public/rubyamf/Index.html
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/rubyamf/browser]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:19:53) [POST]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Sending data 
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2009-07-16 12:19:53) [POST]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RubyamfController#controllers (for 127.0.0.1 at 2009-07-16 12:19:53) [POST]
+Completed in 12ms (DB: 0) |  [http://localhost/rubyamf_gateway]
+Sending data 
+Completed in 18ms (View: 0, DB: 0) | 200 OK [http://localhost/rubyamf_gateway]
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Users/alexandrebini/rubyAMFBrowser/vendor/plugins/rubyamf/app/mime_type.rb:3)

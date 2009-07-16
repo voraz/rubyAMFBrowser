@@ -1,0 +1,92 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Conection.as</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">br</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">com</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">voraz</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">browser</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">layout</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">model</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">conection</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">controls</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Alert</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">messaging</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Channel</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">messaging</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ChannelSet</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">messaging</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">channels</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">AMFChannel</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">rpc</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">events</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">FaultEvent</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">rpc</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">events</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ResultEvent</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">rpc</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">remoting</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Operation</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">mx</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">rpc</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">remoting</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">mxml</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">RemoteObject</span>;
+
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">Conection</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">endPointUrl</span>:<span class="ActionScriptDefault_Text">String</span> <span class="ActionScriptOperator">=</span><span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace"></span> <span class="ActionScriptString">"../rubyamf_gateway"</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">channelName</span>:<span class="ActionScriptDefault_Text">String</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptString">"rubyamf"</span>;
+        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">Conection</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptBracket/Brace">}</span>
+        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">call</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">servico</span>:<span class="ActionScriptDefault_Text">String</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">metodo</span>:<span class="ActionScriptDefault_Text">String</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">callBack</span>:<span class="ActionScriptDefault_Text">Function</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">conexaoFalsa</span>:<span class="ActionScriptDefault_Text">Function</span><span class="ActionScriptOperator">=</span><span class="ActionScriptReserved">null</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">VO</span>:<span class="ActionScriptDefault_Text">Object</span><span class="ActionScriptOperator">=</span><span class="ActionScriptReserved">null</span><span class="ActionScriptBracket/Brace">)</span> : <span class="ActionScriptReserved">void</span> 
+        <span class="ActionScriptBracket/Brace">{</span><span class="ActionScriptBracket/Brace"></span>  
+             <span class="ActionScriptComment">// recuperando uma instância do RemoteObject pré-configurada  
+</span>             <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">connection</span>:<span class="ActionScriptDefault_Text">RemoteObject</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">instanceRemoteObject</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;  
+   
+             <span class="ActionScriptComment">// Faz a busca do serviço solicitado  
+</span>             <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">source</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">servico</span>;  
+   
+             <span class="ActionScriptComment">// Mostra o cursor ocupado  
+</span>             <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">showBusyCursor</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">true</span>;  
+   
+             <span class="ActionScriptComment">// Mostra erros, se ocorrerem  
+</span>             <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">conexaoFalsa</span><span class="ActionScriptOperator">==</span><span class="ActionScriptReserved">null</span><span class="ActionScriptBracket/Brace">)</span>
+             <span class="ActionScriptBracket/Brace">{</span>
+                 <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">addEventListener</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">FaultEvent</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">FAULT</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">onConnectionFault</span><span class="ActionScriptBracket/Brace">)</span>;
+             <span class="ActionScriptBracket/Brace">}</span>  <span class="ActionScriptReserved">else</span><span class="ActionScriptBracket/Brace">{</span>
+                 <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">addEventListener</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">FaultEvent</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">FAULT</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">conexaoFalsa</span><span class="ActionScriptBracket/Brace">)</span>;
+             <span class="ActionScriptBracket/Brace">}</span>
+   
+             <span class="ActionScriptComment">// executa o método da classe de serviço  
+</span>             <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">op</span>:<span class="ActionScriptDefault_Text">Operation</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">getOperation</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">metodo</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptReserved">as</span> <span class="ActionScriptDefault_Text">Operation</span>; 
+             <span class="ActionScriptDefault_Text">op</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">addEventListener</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">ResultEvent</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">RESULT</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">callBack</span><span class="ActionScriptBracket/Brace">)</span>;  
+   
+             <span class="ActionScriptComment">// quando houver a necessidade de enviar um objeto para o  servidor  
+</span>             <span class="ActionScriptReserved">if</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">VO</span><span class="ActionScriptOperator">==</span><span class="ActionScriptReserved">null</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">{</span>
+                 <span class="ActionScriptDefault_Text">op</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">send</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>
+             <span class="ActionScriptBracket/Brace">}</span><span class="ActionScriptReserved">else</span><span class="ActionScriptBracket/Brace">{</span>
+                 <span class="ActionScriptDefault_Text">op</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">send</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">VO</span><span class="ActionScriptBracket/Brace">)</span>;
+             <span class="ActionScriptBracket/Brace">}</span>
+         <span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">}</span>
+
+         <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">onConnectionFault</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">event</span>:<span class="ActionScriptDefault_Text">FaultEvent</span><span class="ActionScriptBracket/Brace">)</span> : <span class="ActionScriptReserved">void</span> 
+         <span class="ActionScriptBracket/Brace">{</span>  
+             <span class="ActionScriptDefault_Text">Alert</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">show</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">event</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">fault</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">getStackTrace</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">,</span><span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace"></span><span class="ActionScriptString">"FALHA DE CONEXÃO!"</span><span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">)</span>;  
+         <span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">}</span> 
+         
+         <span class="ActionScriptReserved">private</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">instanceRemoteObject</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">RemoteObject</span> 
+         <span class="ActionScriptBracket/Brace">{</span><span class="ActionScriptBracket/Brace"></span> 
+             <span class="ActionScriptComment">// Cria um ChannelSet.  
+</span>             <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">cs</span>:<span class="ActionScriptDefault_Text">ChannelSet</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">ChannelSet</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;  
+   
+             <span class="ActionScriptComment">// Cria um Channel.  
+</span>             <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">customChannel</span>:<span class="ActionScriptDefault_Text">Channel</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">AMFChannel</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">channelName</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">endPointUrl</span><span class="ActionScriptBracket/Brace">)</span>;  
+   
+             <span class="ActionScriptComment">// Adiciona o Channel ao ChannelSet.  
+</span>             <span class="ActionScriptDefault_Text">cs</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">addChannel</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">customChannel</span><span class="ActionScriptBracket/Brace">)</span>;  
+       
+   
+             <span class="ActionScriptComment">// instância o objeto  
+</span>             <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">connection</span>:<span class="ActionScriptDefault_Text">RemoteObject</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">RemoteObject</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">channelName</span><span class="ActionScriptBracket/Brace">)</span>;  
+   
+             <span class="ActionScriptComment">// Assign the ChannelSet to a RemoteObject instance.  
+</span>             <span class="ActionScriptDefault_Text">connection</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">channelSet</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">cs</span>;   
+             
+   
+             <span class="ActionScriptComment">// retorna a instância do RemoteObject  
+</span>             <span class="ActionScriptReserved">return</span> <span class="ActionScriptDefault_Text">connection</span>;  
+         <span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">}</span>  
+        
+    <span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">}</span>
+<span class="ActionScriptBracket/Brace"></span><span class="ActionScriptBracket/Brace">}</span></pre></body>
+</html>

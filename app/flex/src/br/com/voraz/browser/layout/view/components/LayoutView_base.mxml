@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HDividedBox 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/halo" 
+	x="0" y="0" 
+	width="100%" height="100%"
+	direction="horizontal" 
+	contentBackgroundColor="#222222" 
+	paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10"
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			[Bindable]
+			public var provider:ArrayCollection = new ArrayCollection();
+		]]>
+	</fx:Script>
+	
+	<fx:Style source="utilities/Browser.css"/>
+	<s:VGroup x="0" y="0" width="200" height="100%" contentBackgroundColor="#222222">
+		<mx:Canvas width="100%" backgroundColor="#000000" horizontalCenter="0">
+			<mx:Image source="br/com/voraz/browser/layout/view/components/utilities/logo.png" width="100%"  alpha="1" themeColor="#000000" baseColor="#000000" errorColor="#000000" horizontalAlign="center"/>
+		</mx:Canvas>
+		<mx:Tree width="100%" height="100%" labelField="label" borderStyle="none" alternatingItemColors="[#FFFFFF, #F4F4F4]" color="#222222" id="treeControllers"/>
+	</s:VGroup>
+	<mx:TabNavigator width="100%" height="100%" color="#000000" themeColor="#FFFFFF" borderStyle="none" paddingBottom="0" paddingTop="0">
+		<mx:Canvas label="Funções" width="100%" height="100%" backgroundColor="#222222">
+			<mx:VDividedBox width="100%" height="100%" contentBackgroundColor="#FFFFFF" themeColor="222222" >
+				<mx:HDividedBox height="50%" width="100%" backgroundColor="#222222" contentBackgroundColor="#222222">
+					<mx:Tree width="200" height="100%" labelField="name" borderStyle="none" alternatingItemColors="[#FFFFFF, #F4F4F4]" color="#222222" id="treeMethods"/>
+					<mx:Form width="100%" height="100%"
+						themeColor="#FFFFFF" color="#222222" contentBackgroundColor="#FFFFFF" backgroundColor="#FFFFFF">
+						<mx:FormItem label="Parametro 1:" width="100%">
+							<s:TextInput id="parameter"/>
+						</mx:FormItem>
+						<mx:FormItem >
+							<s:Button label="Call" color="#000000" height="28" id="buttonCall"/>
+						</mx:FormItem>
+						
+					</mx:Form>
+				</mx:HDividedBox>
+				<mx:TabNavigator width="100%" height="100%" color="#000000" themeColor="#FFFFFF" paddingTop="0" paddingBottom="0" backgroundColor="#222222">
+					<mx:VBox label="Resultados" width="100%" height="100%" borderThickness="0" backgroundColor="#FFFFFF" id="vbResult">
+						<mx:Tree width="100%" 
+								 height="100%"
+								 dataProvider="{provider}"
+								 variableRowHeight="true"
+								 />
+					</mx:VBox>
+					<mx:Canvas label="Informações" width="100%" height="100%" backgroundColor="#FFFFFF">
+					</mx:Canvas>
+					<mx:Canvas label="Resultados (tree)" width="100%" height="100%" backgroundColor="#FFFFFF">
+					</mx:Canvas>
+				</mx:TabNavigator>	
+				
+			</mx:VDividedBox>
+			</mx:Canvas>
+			<mx:Canvas label="Descrição" width="100%" height="100%" color="#222222" backgroundColor="#FFFFFF">
+				<mx:Label x="0" y="0" text="Descrição vinda do rails."/>
+			</mx:Canvas>
+		</mx:TabNavigator>	
+</mx:HDividedBox>
